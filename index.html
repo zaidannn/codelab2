@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Penjumlahan Bilangan</title>
+  </head>
+  <body>
+    <h1>PENJUMLAHAN BILANGAN</h1>
+
+    <div>
+      <label for="bilangan1">Bilangan 1:</label>
+      <input type="text" id="bilangan1" />
+
+      <label for="bilangan2">Bilangan 2:</label>
+      <input type="text" id="bilangan2" />
+    </div>
+
+    <button onclick="penjumlahan()">Hitung</button>
+    <button onclick="reset()">Ulang</button>
+
+    <script>
+      function penjumlahan() {
+        // Ambil nilai dari input
+        var bilangan1 = parseFloat(document.getElementById("bilangan1").value);
+        var bilangan2 = parseFloat(document.getElementById("bilangan2").value);
+
+        // Lakukan penjumlahan
+        var hasil = bilangan1 + bilangan2;
+
+        // Tampilkan hasil sebagai pesan alert
+        alert("Hasil penjumlahan: " + hasil);
+      }
+
+      function reset() {
+        // Hapus nilai di input
+        document.getElementById("bilangan1").value = "";
+        document.getElementById("bilangan2").value = "";
+      }
+    </script>
+  </body>
+</html>
